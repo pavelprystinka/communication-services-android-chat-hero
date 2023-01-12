@@ -67,6 +67,7 @@ class ChatListFragment : Fragment() {
     }
 
     fun closeChat(): Boolean {
+        viewModel.openedThread.value = null
         if (binding.chatContainer.isNotEmpty()) {
             binding.chatContainer.removeAllViews()
             return true

@@ -20,7 +20,8 @@ android {
         versionName "1.0"
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
-        buildConfigField 'String', 'SERVICE_HERO_URL', properties.getProperty('SERVICE_HERO_URL', '""')
+        buildConfigField 'String', 'SERVICE_HERO_URL',
+                properties.getProperty('SERVICE_HERO_URL', '"http://<YOUR_MACHINE_ADDRESS>:3000/"')
     }
 
     buildFeatures {
